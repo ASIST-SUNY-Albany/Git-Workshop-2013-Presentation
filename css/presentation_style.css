@@ -386,7 +386,12 @@ a:focus {
 #branching .step .slide {
 	height: 200px;
 	top: -1em;
-}	
+}
+
+#rebase img{
+    position: fixed;
+    left: -50px;
+}
 	
 #overview { display: none }
 
