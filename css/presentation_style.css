@@ -241,6 +241,15 @@ a:focus {
     top: 4.5em;
 	left: 1.0em;
 	color: #210B61;
+}
+
+#title h3 {
+	font-size: 15px;
+	text-align: center;
+	position: absolute; 
+    top: 18.5em;
+	right: 0em;
+	color: #210B61;
 }	
 
 #title .footnote {
