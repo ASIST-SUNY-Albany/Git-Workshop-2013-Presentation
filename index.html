@@ -30,19 +30,19 @@
 		<h2>by Sankhesh Jhaveri, Dhananjay Deo & Brian Helba</h2>
 	</div>
     
-    <div id="version" class="step slide" data-x="4000" data-y="2000" data-rotate="-40" align="center">
+    <div id="version" class="step slide" data-x="2500" data-y="1500" data-rotate="-40" align="center">
         <q><b class="head">Why version control??</b></q><br/>
         <img src="images/version_control.png" alt="gitk" border="0">
     </div>
         
-    <div id="history" class="step imgslide" data-x="6000" data-y="5000" data-scale="0.2">
+    <div id="history" class="step imgslide" data-x="1250" data-y="1250" data-scale="0.2">
         <span class="footref">Ref:<a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">git-scm.com/book</a> </span>
         <img class="im1" src="images/local_version_control.png" alt="local_version_control" border="0">
         <img class="im2" src="images/centralized_version_control.png" alt="centralized version control" border="0">
         <img class="im3" src="images/distributed_version_control.png" alt="distributed version control" border="0">
     </div>
     
-    <div id="installation" class="step slide" data-x="4000" data-y="5000">
+    <div id="installation" class="step slide" data-x="-850" data-y="2000">
 		<q><b class="head">Installation</b></q><br/>
         <p>Linux<br/>      
         <p class="code">$ sudo apt-get install git gitk</p></p><br/>
@@ -52,7 +52,7 @@
         <a href="http://code.google.com/p/git-osx-installer">code.google.com/p/git-osx-installer</a> <br/></p>
     </div>
     
-    <div id="introduce-yourself" class="step slide" data-x="3500" data-y="4500" data-z="-200" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+    <div id="introduce-yourself" class="step slide" data-x="-1350" data-y="2500" data-z="-200" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
         <q><b class="head push">Introduce yourself</b></q><br/>
         <p class="code tp">$ git config --global user.name "Your Name"<br/>
                            $ git config --global user.email youremail@email.com</p><br/>
@@ -67,7 +67,7 @@
         <img src="images/in_a_nutshell.png" alt="Git in a nutshell" border="0">
     </div>
     
-    <div id="hash-object" class="step slide" data-x="2500" data-y="2500" data-scale="0.2" data-z="400">
+    <div id="hash-object" class="step slide" data-x="250" data-y="1500" data-scale="0.2" data-z="400">
         <q><b class="head">SHA-1 sum</b></q><br/>
         <p class="code">$ echo 'Hello, world!' > greeting<br/><br/>
                         $ git hash-object greeting<br/>
@@ -79,7 +79,49 @@
         </ul>
     </div>
 
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+	<div id="clone" class="step slide" data-x="4000" data-y="2000" data-scale="2">
+        <q><b class="head">Cloning an existing repository</b></q><br/>
+        <p class="code">$ git clone git://github.com/ASIST-SUNY-Albany/Git-Workshop-2013.git myRepo<br/><br/>
+                        $ git clone https://github.com/ASIST-SUNY-Albany/Git-Workshop-2013.git myRepo<br/><br/>
+                        $ git clone git@github.com:ASIST-SUNY-Albany/Git-Workshop-2013.git myRepo<br/><br/></p>
+    </div>
+
+	<div id="undo" class="step slide" data-x="1500" data-y="2000" data-scale="1">
+        <q><b class="head push">Undoing things</b></q><br/>
+        <b class="pull">Amend Last commit<br/><br/></b>
+        <p class="code tp">$ git commit --amend</p><br/>
+        <b class="pull">Unstaging a staged file<br/><br/></b>
+        <p class="code tp">$ git reset HEAD filename</p><br/>
+        <b class="pull">Unmodifying a modified file<br/><br/></b>
+        <p class="code tp">$ git checkout -- filename</p>
+    </div>
+
+	<div id="blame" class="step slide" data-x="1750" data-y="3000" data-scale="1">
+        <span class="footref">Ref:<a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">git-scm.com/book</a> </span>
+		<q><b class="head">Blame</b></q><br/>
+        <p class="code">$ git blame filename</p><br/>
+		<img src="images/blame.png" alt="git blame" border="0">
+    </div>
+
+
+	<div id="branching" class="step slide" data-x="200" data-y="2250" data-scale="1">
+        <span class="footref">Ref:<a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">git-scm.com/book</a> </span>
+		<q><b class="head">Branching</b></q><br/>
+        <p class="code">$ git checkout -b iss53</p><br/>
+		<img src="images/branching.png" alt="git branching" border="0">
+    </div>
+
+
+	<div id="merging" class="step slide" data-x="200" data-y="3250" data-scale="1">
+        <span class="footref">Ref:<a href="http://git-scm.com/book/en/Getting-Started-About-Version-Control">git-scm.com/book</a> </span>
+		<q><b class="head">Merging</b></q><br/>
+        <p class="code">$ git checkout master<br/>
+                        $ git merge iss53</p><br/>
+		<img src="images/merging.png" alt="git merging" border="0">
+    </div>	
+	
+	
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="7">
     </div>
 
 </div>

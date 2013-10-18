@@ -109,6 +109,7 @@ a:focus {
     list-style-type:disc;
     list-style-position:inside;
     text-align: justify;
+	width: 1000px;
 }
 .code {
     background: #6E6E6E;
@@ -144,7 +145,7 @@ a:focus {
     
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -284,7 +285,8 @@ a:focus {
     z-index: -5;
 }
 
-#introduce-yourself p {
+#introduce-yourself p,
+#undo p {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style:    preserve-3d;
     -ms-transform-style:     preserve-3d;
@@ -293,7 +295,9 @@ a:focus {
 }
 
 #introduce-yourself span,
-#introduce-yourself b {
+#introduce-yourself b, 
+#undo span,
+#undo b {
     display: inline-block;
     -webkit-transform: translateZ(40px);
     -moz-transform:    translateZ(40px);
@@ -308,7 +312,7 @@ a:focus {
     transition:         1.5s;
 }
 
-#introduce-yourself .tp {
+#introduce-yourself, #undo .tp {
     -webkit-transform: translateZ(-400px);
     -moz-transform:    translateZ(-400px);
     -ms-transform:     translateZ(-400px);
@@ -322,7 +326,7 @@ a:focus {
     transition:         1.5s;
 }
 
-#introduce-yourself .pull {
+#introduce-yourself, #undo .pull {
     -webkit-transform: translateZ(200px);
     -moz-transform:    translateZ(200px);
     -ms-transform:     translateZ(200px);
@@ -336,7 +340,7 @@ a:focus {
     transition:         2.5s;
 }
 
-#introduce-yourself .push {
+#introduce-yourself, #undo .push {
     -webkit-transform: translateZ(160px);
     -moz-transform:    translateZ(160px);
     -ms-transform:     translateZ(160px);
@@ -352,7 +356,10 @@ a:focus {
 
 #introduce-yourself.present span,
 #introduce-yourself.present b,
-#introduce-yourself.present p {
+#introduce-yourself.present p, 
+#undo.present span,
+#undo.present b,
+#undo.present p {
     -webkit-transform: translateZ(0px);
     -moz-transform:    translateZ(0px);
     -ms-transform:     translateZ(0px);
@@ -365,7 +372,22 @@ a:focus {
     width: 100%;
     z-index: -1;
 }
-
+ 
+#clone .code {
+	background: #6E6E6E;
+    font-family: 'Inconsolata', Open Sans;
+    color: #F5DA81;
+    text-align: justify;
+    padding: 2px;
+	width: 1100px;
+	position: fixed;
+	Left: -90px
+} 
+#branching .step .slide {
+	height: 200px;
+	top: -1em;
+}	
+	
 #overview { display: none }
 
 .impress-on-overview .step {
