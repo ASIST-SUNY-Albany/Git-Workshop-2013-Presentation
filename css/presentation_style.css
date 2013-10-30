@@ -51,13 +51,13 @@ body {
     font-family: 'Open Sans', sans-serif;
     min-height: 740px;
 
-    background: #151d30;
+    /* background: #151d30; */
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(#CCF3DE), to(#8BCADE));
-    background: -webkit-radial-gradient(rgb(#CCF3DE), rgb(#8BCADE));
-    background:    -moz-radial-gradient(rgb(#CCF3DE), rgb(#8BCADE));
-    background:     -ms-radial-gradient(rgb(#CCF3DE), rgb(#8BCADE));
-    background:      -o-radial-gradient(rgb(#CCF3DE), rgb(#8BCADE));
-    background:         radial-gradient(rgb(#CCF3DE), rgb(#8BCADE));
+    background: -webkit-radial-gradient(#CCF3DE, #8BCADE);
+    background:    -moz-radial-gradient(#CCF3DE, #8BCADE);
+    background:     -ms-radial-gradient(#CCF3DE, #8BCADE);
+    background:      -o-radial-gradient(#CCF3DE, #8BCADE);
+    background:         radial-gradient(#CCF3DE, #8BCADE);
 }
 
 b, strong { font-weight: bold }
